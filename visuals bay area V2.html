@@ -1,0 +1,94 @@
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170967794-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-170967794-1');
+</script>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Week');
+      data.addColumn('number', 'Owning or running a for-profit business');
+      data.addColumn('number', 'Money, Debt, and Consumer Issues');
+      data.addColumn('number', 'Small Business and IP');
+      data.addColumn('number', 'Problems at a Current Job');
+      data.addColumn('number', 'Court and Lawyers');
+      data.addColumn('number', 'Small Claims actions');
+      data.addColumn('number', 'Ownership issues of a car');
+      data.addColumn('number', 'Family');
+      data.addColumn('number', 'Having personal data breached');
+      data.addColumn('number', 'Dealing with traffic and parking tickets');
+      data.addColumn('number', 'Being a victim or witness to a crime');
+      data.addColumn('number', 'Accidents, Injuries and Torts (Problems with Others)');
+      data.addColumn('number', 'Crime & Prisons');
+      data.addColumn('number', 'Renting or leasing a home');
+      data.addColumn('number', 'Problems with living conditions');
+      data.addColumn('number', 'Owning a Home');
+      data.addColumn('number', 'Housing');
+      data.addColumn('number', 'Traffic and Cars');
+      data.addColumn('number', 'Car insurance');
+      data.addColumn('number', 'Health');
+      data.addColumn('number', 'Getting injured in or by a car');
+      data.addColumn('number', 'Criminal Record');
+      data.addColumn('number', 'Estates & Wills');
+      data.addColumn('number', 'Domestic Violence and Abuse');
+      data.addColumn('number', 'Education');
+      data.addColumn('number', 'Work and Employment');
+      data.addColumn('number', 'Identity Theft and Lost Credit Cards');
+      data.addColumn('number', 'Immigration');
+
+      data.addRows([
+        [1,  2, 6, 6, 4, 1, 4, 6, 1, 8, 9, 4, 2, 1, 8, 5, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [2,  2, 3, 2, 6, 1, 2, 3, 0, 9, 8, 0, 2, 5, 5, 5, 1, 3, 1, 4, 3, 1, 1, 1, 0, 0, 0, 0, 0],
+        [3,  2,   7, 3, 6, 2, 3, 6, 0, 8, 16, 8, 3, 2, 4, 3, 2, 1, 2, 2, 1, 1, 1, 0, 1, 1, 0, 0, 0],
+        [4,  4, 5, 2, 6, 1, 2, 6, 1, 16, 10, 4, 3, 2, 1, 1, 0, 2, 1, 4, 5, 0, 1, 1, 0, 1, 0, 0, 0],
+        [5,  4, 5, 4, 6, 0, 0, 3, 0, 11, 8, 1, 0, 2, 0, 2, 0, 4, 0, 0, 2, 0, 0, 2, 1, 0, 1, 0, 0],
+        [6,   2, 9,  1, 6, 3, 2, 5, 7, 14, 13, 3, 2, 2, 7, 1, 0, 2, 1, 1, 11, 1, 1, 1, 0, 0, 0, 0, 0],
+        [7,   4, 4,  3, 5, 2, 5, 2, 0, 5, 6, 2, 1, 2, 5, 3, 0, 3, 0, 1, 3, 0, 0, 0, 0, 2, 3, 1, 0],
+        [8,  6, 12, 14, 14, 4, 2, 4, 2, 18, 8, 2, 8, 0, 14, 12, 6, 2, 0, 2, 8, 0, 2, 2, 0, 2, 0, 2, 2],
+        [9,  0, 4, 1, 3, 1, 0, 0, 0, 5, 3, 2, 1, 4, 3, 2, 0, 1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0],
+        [10, 3, 4, 5, 17, 1, 2, 3, 3, 15, 8, 8, 3, 2, 2, 4, 0, 1, 2, 1, 9, 0, 2, 2, 1, 0, 0, 0, 0],
+        [11,  7,  7,  8, 28, 2, 1, 0, 2, 18, 6, 11, 11, 5, 10, 9, 1, 9, 1, 0, 15, 0, 1, 3, 0, 1, 2, 3, 1],
+        [12,  8,  18,  6, 25, 0, 10, 2, 0, 24, 7, 11, 7, 5, 18, 9, 0, 3, 0, 0, 24, 0, 2, 3, 1, 0, 2, 1, 1],
+        [13,  1,  7,  1, 11, 2, 1, 2, 1, 7, 4, 6, 1, 1, 2, 2, 2, 0, 0, 1, 4, 0, 0, 1, 0, 0, 3, 1, 0],
+        [14,  0,  3,  4, 5, 1, 2, 0, 3, 3, 1, 2, 2, 2, 1, 1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 1, 0],
+        [15,  0,  1,  0, 2, 0, 1, 3, 0, 4, 4, 3, 0, 0, 4, 1, 0, 1, 0, 0, 2, 0, 0, 1, 0, 0, 0, 0, 0],
+        [16,  3,  4,  4, 4, 1, 1, 2, 0, 6, 3, 2, 1, 2, 2, 4, 1, 1, 0, 1, 5, 1, 0, 0, 0, 0, 1, 0, 0]
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Legal Needs Indicators',
+          subtitle: 'Subreddit: Bay Area'
+        },
+        width: 1500,
+        height: 1100,
+        axes: {
+          x: {
+            0: {side: 'bottom'}
+          }
+        }
+      };
+
+      var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+  </script>
+</head>
+<body>
+  <div id="line_top_x"></div>
+</body>
+</html>
+
+
